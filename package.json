@@ -1,0 +1,15 @@
+{
+  "name": "fake-server",
+  "version": "1.0.0",
+  "author": "Vinesh",
+  "description": "Test server for small frontend applications",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
