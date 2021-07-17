@@ -68,6 +68,7 @@ fs.readFile("./users.json", (err, data) => {
 
     //Add new user
     data.users.push({id: last_item_id + 1, email: email, password: password}); //add some data
+    userdb.users = data.users;
     var writeData = fs.writeFile("./users.json", JSON.stringify(data), (err, result) => {  // WRITE
         if (err) {
           const status = 401
